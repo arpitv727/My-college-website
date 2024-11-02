@@ -1,0 +1,33 @@
+.campus{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width: 23%;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 200px;  /* Set a fixed width */
+    height: 300px; /* Set a fixed height to maintain uniformity */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    
+    
+}
+
+/*----------media query---------*/
+
+@media (max-width:800px){
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}
